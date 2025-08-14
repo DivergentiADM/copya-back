@@ -479,7 +479,9 @@ Asegúrate de configurar todas las variables necesarias:
 ```env
 NODE_ENV=production
 JWT_SECRET=clave-super-segura-para-produccion
-MONGODB_URI=mongodb+srv://usuario:password@cluster.mongodb.net/produccion
+NODE_ENV=production
+JWT_SECRET=__DEFINE_EN_EL_ENTORNO__
+MONGODB_URI=mongodb+srv://<USER>:<PASSWORD>@<HOST>/<DB>?retryWrites=true&w=majority
 # ... resto de variables
 ```
 
